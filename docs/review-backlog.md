@@ -38,6 +38,7 @@
 - 장편 영상의 YouTube 공개·일부 공개 업로드 확정
 - YouTube 썸네일 facade와 개인정보 보호 강화 플레이어의 지연 로드
 - Notion Markdown API 우선과 선택적 Block API 보완
+- 전체 Notion 콘텐츠의 1시간 시간 기반 재검증
 - 미지원 Notion 블록의 식별 가능한 fallback 렌더링
 - 최초 릴리스의 Notion Webhook 제외
 - Google Tag Manager 없는 Google Analytics 4 직접 연동
@@ -49,7 +50,6 @@
 
 - Vitest와 Zod 추가
 - Motion의 MVP 애니메이션 도구 채택
-- `cacheLife('hours')` 기반 1시간 재검증 범위
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
 - Node.js와 TypeScript 기준 버전
 - ESLint와 Prettier의 채택·구성
@@ -87,7 +87,6 @@
 - 포스트와 프로젝트의 발행 상태 정의
 - Notion 장애 시 사용자 경험과 운영 절차
 - 빈 목록과 빈 상세 데이터의 사용자 경험
-- 시간 기반 재검증과 실제 콘텐츠 반영 시점
 - 접근성 수용 기준과 수동 검증 목록
 - Core Web Vitals 목표와 측정 환경
 - JSON-LD 유형과 실제 화면 콘텐츠의 일치

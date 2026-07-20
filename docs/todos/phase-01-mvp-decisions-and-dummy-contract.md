@@ -34,7 +34,7 @@
 - [x] Notion Markdown API 우선과 Block API 보완 방식 확정
 - [x] 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
 - [x] Webhook의 최초 릴리스 제외 확정
-- [ ] 시간 기반 재검증 범위 확정
+- [x] 시간 기반 재검증 범위 확정
 
 ## 이번 검수에서 확정된 세부 사항
 
@@ -51,6 +51,8 @@
 - 구조·메타데이터 보존이 필요한 블록의 Block API 선택 조회
 - Block API의 pagination과 `has_children` 기반 재귀 조회
 - Notion 파일 URL 만료에 대응하는 재조회 또는 안정 URL 변환
+- 전체 Notion 콘텐츠의 `cacheLife('hours')` 기반 1시간 서버 재검증
+- Webhook 없는 단일 재검증 정책과 콘텐츠별 캐시 격리
 - Google Tag Manager 없는 GA4 직접 연동
 - 한국 대상 MVP의 사전 동의 화면 없는 최소 수집 GA4 즉시 로드
 - Google Signals·광고 개인화·광고 계정 연결·User-ID·사용자 제공 데이터 제외
@@ -63,7 +65,6 @@
 
 ## 공식 문서 조사 기반 권장안
 
-- `cacheLife('hours')` 기반 1시간 서버 재검증
 
 ## 공식 조사 근거
 

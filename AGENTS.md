@@ -44,6 +44,7 @@
 - Notion 런타임 연동의 서버 전용 SDK 사용
 - `ntn`의 개발·조회·관리 용도 한정
 - Notion Markdown API 우선과 선택적 Block API 보완
+- 전체 Notion 콘텐츠의 1시간 시간 기반 재검증
 - 디자인 확정 전 Storybook과 시각 회귀 테스트의 보류
 - 대표 콘텐츠 선정과 개발 작업의 병렬 진행
 - 실제 콘텐츠 준비 전 도메인 계약 기반 더미 fixture 사용

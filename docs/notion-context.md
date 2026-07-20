@@ -94,6 +94,8 @@
 - 구조·메타데이터 보존이 필요한 블록의 Block API 선택 조회
 - Block API 사용 시 pagination과 하위 블록의 재귀 조회 적용
 - Notion 파일 URL의 만료를 고려한 재조회 또는 안정 URL 변환
+- 전체 공개 콘텐츠의 1시간 시간 기반 재검증
+- Webhook 없는 단일 재검증 정책과 콘텐츠별 캐시 격리
 - 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
 - 최초 릴리스의 Notion Webhook 제외
 - Notion-hosted `file` URL의 1시간 유효기간

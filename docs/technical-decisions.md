@@ -147,7 +147,7 @@ Server Component
 - 공개 페이지의 정적 우선 렌더링
 - 목록·상세의 태그 기반 캐시 무효화
 - 최초 릴리스의 Notion Webhook 제외
-- 시간 기반 재검증의 단독 활용 방향
+- 전체 Notion 콘텐츠의 1시간 시간 기반 재검증
 - 공개 콘텐츠와 후속 초안 미리보기의 렌더링 분리
 
 ### 잠정 구현안
@@ -157,7 +157,7 @@ Server Component
 - `cacheLife`와 `cacheTag` 기반 SDK 함수 캐시
 - 목록 태그 예시: `notion:posts`, `notion:projects`
 - 상세 태그 예시: `notion:page:{pageId}`
-- `cacheLife('hours')` 기반 1시간 서버 재검증 후보
+- `cacheLife('hours')` 기반 1시간 서버 재검증
 - 재검증 시점 이후 첫 요청의 기존 캐시 응답과 백그라운드 갱신
 - 태그 재검증 사용 시 정적 export 제외
 - `ntn`의 웹사이트 런타임 의존성 제외
