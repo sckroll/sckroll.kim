@@ -13,11 +13,12 @@
 3. [`docs/project-context.md`](docs/project-context.md)의 목표와 범위 확인
 4. [`docs/technical-decisions.md`](docs/technical-decisions.md)의 기술 결정 확인
 5. [`docs/notion-context.md`](docs/notion-context.md)의 데이터 소스와 스키마 상태 확인
-6. [`docs/quality-decisions.md`](docs/quality-decisions.md)의 접근성·성능·검색·테스트 결정 확인
-7. [`docs/review-backlog.md`](docs/review-backlog.md)의 미결정 사항과 다음 단계 확인
-8. [`docs/todos/README.md`](docs/todos/README.md)의 현재 Phase와 체크리스트 확인
-9. `git status`와 최근 커밋을 통한 사용자 변경 사항 확인
-10. 현재 단계에 필요한 스킬과 공식 문서의 최신 내용 확인
+6. [`docs/content-contract.md`](docs/content-contract.md)의 도메인·fixture·Notion 매핑 확인
+7. [`docs/quality-decisions.md`](docs/quality-decisions.md)의 접근성·성능·검색·테스트 결정 확인
+8. [`docs/review-backlog.md`](docs/review-backlog.md)의 미결정 사항과 다음 단계 확인
+9. [`docs/todos/README.md`](docs/todos/README.md)의 현재 Phase와 체크리스트 확인
+10. `git status`와 최근 커밋을 통한 사용자 변경 사항 확인
+11. 현재 단계에 필요한 스킬과 공식 문서의 최신 내용 확인
 
 ## 현재 프로젝트 상태
 
@@ -54,6 +55,7 @@
 - Zustand와 TanStack Query의 MVP 제외
 - 대표 콘텐츠 선정과 개발 작업의 병렬 진행
 - 실제 콘텐츠 준비 전 도메인 계약 기반 더미 fixture 사용
+- 포스트 최하단의 다중 참고 자료와 프로필 확장 섹션 지원
 - canonical 기준 도메인으로 `https://sckroll.kim` 사용
 - MVP 콘텐츠의 한국어 중심 구성과 `Asia/Seoul` 기준 시간대 사용
 - 초기 호스팅 플랫폼으로 Vercel 사용

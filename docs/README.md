@@ -11,6 +11,7 @@
 - [`project-context.md`](project-context.md): 프로젝트 배경, 사용자, 포지셔닝, 콘텐츠, 페이지 구조
 - [`technical-decisions.md`](technical-decisions.md): 기술 스택, 컴포넌트 경계, Notion 연동, 렌더링
 - [`notion-context.md`](notion-context.md): Notion 식별자, 현재 스키마, 운영 제약, 변경 후보
+- [`content-contract.md`](content-contract.md): 도메인 모델, fixture, Notion 속성 매핑, 교체 절차
 - [`quality-decisions.md`](quality-decisions.md): 접근성, 성능, 미디어, GEO·AEO·SEO, 테스트
 - [`review-backlog.md`](review-backlog.md): 결정 상태, 미결정 사항, 후속 검토 순서
 - [`todos/README.md`](todos/README.md): 현재 Phase, 전체 로드맵, 단계별 체크리스트
