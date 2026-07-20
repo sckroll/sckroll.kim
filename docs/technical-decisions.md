@@ -19,6 +19,9 @@
 - Playwright와 `playwright-cli`
 - npm 패키지 매니저와 `package-lock.json` 커밋
 - `packageManager` 필드의 실제 npm 버전 고정
+- Node.js 24 LTS 메이저 버전 사용
+- `.nvmrc` 또는 `.node-version`의 `24` 기록
+- `engines.node`의 `>=24 <25` 범위와 24 계열 보안 패치 적용
 - 설치 시점의 최신 안정 버전 재확인과 잠금 파일 고정
 
 ### 추가 권장 도구

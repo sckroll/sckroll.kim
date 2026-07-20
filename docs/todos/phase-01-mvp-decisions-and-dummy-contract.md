@@ -87,7 +87,7 @@
 ## 사용자 체크리스트 — 개발 도구
 
 - [x] npm 패키지 매니저 결정
-- [ ] Node.js LTS 기준 확정
+- [x] Node.js 24 LTS 기준 확정
 - [ ] TypeScript 설치 버전과 호환성 기준 확정
 - [ ] ESLint와 Prettier 채택 확정
 - [ ] 외부 데이터 검증의 Zod 채택 확정
@@ -100,6 +100,10 @@
 - npm 패키지 매니저 사용
 - `package-lock.json` 생성과 커밋
 - `packageManager` 필드의 실제 npm 버전 고정
+- Node.js 24 LTS 메이저 버전 사용
+- `.nvmrc` 또는 `.node-version`의 `24` 기록
+- `engines.node`의 `>=24 <25` 범위 지정
+- 24 계열 최신 보안 패치의 지속 적용
 
 ## 더미 콘텐츠 계약
 

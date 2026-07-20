@@ -46,13 +46,14 @@
 - Google 광고 기능·User-ID·사용자 제공 데이터의 MVP 제외
 - 개인정보 처리방침과 지속 가능한 분석 거부 수단 제공
 - npm 패키지 매니저와 `package-lock.json` 사용
+- Node.js 24 LTS 메이저 기준과 24 계열 보안 패치 적용
 
 ## 검토 중인 제안
 
 - Vitest와 Zod 추가
 - Motion의 MVP 애니메이션 도구 채택
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
-- Node.js와 TypeScript 기준 버전
+- TypeScript 기준 버전
 - ESLint와 Prettier의 채택·구성
 - 의존성별 설치 시점의 안정 버전
 
@@ -63,7 +64,7 @@
 - GA4 실제 설정과 국외 처리 고지 문구의 출시 전 법률 검토
 - 오류·성능 관측 도구의 선택
 - Notion API 버전과 공식 SDK 호환성
-- Cache Components 잠정 구현안과 Node.js 런타임 채택
+- Cache Components 잠정 구현안의 실제 동작 검증
 - Notion 미디어의 수동 업로드와 자동 복제 범위
 - 인트로 애니메이션의 정확한 지속 시간과 건너뛰기 동작
 - Bento 더보기의 초기 타일 수와 추가 높이
