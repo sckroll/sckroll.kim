@@ -35,7 +35,7 @@
 - [ ] Vercel 프로젝트 생성 승인
 - [ ] 환경 변수 등록 승인
 - [ ] canonical 도메인 연결 승인
-- [ ] Notion Webhook 외부 endpoint 생성 승인
+- [ ] Notion 시간 기반 재검증 설정 승인
 - [ ] analytics·Speed Insights 활성화 승인
 - [ ] Search Console 연결 승인
 - [ ] 공개 배포 승인
@@ -48,7 +48,7 @@
 - [ ] production build와 전체 E2E 실행
 - [ ] 도메인·HTTPS·redirect 확인
 - [ ] canonical·robots·sitemap의 production URL 확인
-- [ ] Webhook 서명과 재검증 확인
+- [ ] 캐시 주기와 시간 기반 재검증 확인
 - [ ] 404·500·Notion 장애 동작 확인
 - [ ] 실제 모바일 기기 확인
 - [ ] 공개 배포 실행

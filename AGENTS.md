@@ -46,6 +46,10 @@
 - 디자인 확정 전 Storybook과 시각 회귀 테스트의 보류
 - 대표 콘텐츠 선정과 개발 작업의 병렬 진행
 - 실제 콘텐츠 준비 전 도메인 계약 기반 더미 fixture 사용
+- canonical 기준 도메인으로 `https://sckroll.kim` 사용
+- MVP 콘텐츠의 한국어 중심 구성과 `Asia/Seoul` 기준 시간대 사용
+- 초기 호스팅 플랫폼으로 Vercel 사용
+- 최초 릴리스의 Notion Webhook 제외
 
 ## 작업 제한
 

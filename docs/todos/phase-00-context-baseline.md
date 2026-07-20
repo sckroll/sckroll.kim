@@ -17,7 +17,7 @@
 - [x] `RESOURCES` 미션·비전·핵심 가치의 콘텐츠 연결
 - [x] Base UI와 네이티브 시맨틱의 병행
 - [x] 정적 우선 렌더링과 Server Component 기본 방향
-- [x] Notion 캐시·Webhook과 일반 SEO 기반 GEO·AEO 방향
+- [x] Notion 캐시·재검증과 일반 SEO 기반 GEO·AEO 방향
 - [x] Playwright와 `playwright-cli` 사용 방향
 
 ## 완료된 조사

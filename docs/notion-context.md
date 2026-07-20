@@ -92,7 +92,8 @@
 - `has_more`와 `next_cursor` 기반 pagination 필요
 - block API 사용 시 하위 블록의 재귀 조회 필요
 - Markdown API와 block API 기반 본문 렌더러의 선택 보류
-- 복잡한 Notion 블록의 지원·대체·제외 정책 보류
+- 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
+- 최초 릴리스의 Notion Webhook 제외
 - Notion-hosted `file` URL의 1시간 유효기간
 - external file URL과 Notion-hosted file URL의 별도 처리 필요
 - 정적 HTML과 장기 캐시에 signed file URL 저장 금지
@@ -115,4 +116,4 @@
 - [요청 한도](https://developers.notion.com/reference/request-limits): 요청 제한과 재시도
 - [페이지 Markdown 조회](https://developers.notion.com/reference/retrieve-page-markdown): Markdown 본문 후보
 - [파일 객체](https://developers.notion.com/reference/file-object): 파일 URL 유효기간
-- [Webhook](https://developers.notion.com/reference/webhooks): 이벤트와 서명 검증
+- [Webhook](https://developers.notion.com/reference/webhooks): 후속 실시간 갱신 검토 자료

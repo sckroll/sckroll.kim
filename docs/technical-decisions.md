@@ -26,9 +26,12 @@
 - 코드 품질용 ESLint와 Prettier
 - 일반 웹 미디어용 안정적 Blob 또는 CDN 저장소
 
-### 잠정 인프라 후보
+### 확정 인프라
 
 - Next.js 배포용 Vercel
+
+### 잠정 인프라 후보
+
 - 안정적 미디어 저장용 Vercel Blob 또는 동등한 저장소
 
 ### MVP 보류 도구
@@ -143,7 +146,8 @@ Server Component
 
 - 공개 페이지의 정적 우선 렌더링
 - 목록·상세의 태그 기반 캐시 무효화
-- Webhook과 시간 기반 재검증의 병행 방향
+- 최초 릴리스의 Notion Webhook 제외
+- 시간 기반 재검증의 단독 활용 방향
 - 공개 콘텐츠와 후속 초안 미리보기의 렌더링 분리
 
 ### 잠정 구현안
@@ -153,13 +157,19 @@ Server Component
 - `cacheLife`와 `cacheTag` 기반 SDK 함수 캐시
 - 목록 태그 예시: `notion:posts`, `notion:projects`
 - 상세 태그 예시: `notion:page:{pageId}`
-- Notion Webhook의 변경 신호 활용
-- Webhook raw body 서명 검증과 이벤트 중복·순서 역전 처리
-- 이벤트 수신 후 최신 Notion 상태 재조회
-- Route Handler의 `revalidateTag(tag, { expire: 0 })` 후보
-- 웹훅 누락 대비 6~24시간 시간 기반 재검증 제안
+- `cacheLife('hours')` 기반 1시간 서버 재검증 후보
+- 재검증 시점 이후 첫 요청의 기존 캐시 응답과 백그라운드 갱신
 - 태그 재검증 사용 시 정적 export 제외
 - `ntn`의 웹사이트 런타임 의존성 제외
+
+## Notion 본문 fallback
+
+- 미지원 블록의 안전한 텍스트와 하위 콘텐츠 우선 렌더링
+- 중립적인 별도 요소의 `notion-block--unsupported` 클래스 적용
+- 원본 블록 타입 식별용 `data-notion-block-type` 속성 적용
+- 파일·임베드 등 평면화가 어려운 콘텐츠의 설명형 링크 제공
+- 추후 블록 타입별 전용 렌더러 교체가 가능한 매핑 경계 구성
+- 원본 내부 ID와 오류 정보의 사용자 화면 노출 금지
 
 ## Notion 오류와 미디어
 

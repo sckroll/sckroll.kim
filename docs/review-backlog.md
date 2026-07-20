@@ -20,20 +20,30 @@
 - 프로젝트의 `PROJECTS` 데이터베이스 참조
 - 미션·비전·핵심 가치의 `RESOURCES` 페이지 참조
 - Base UI와 기능별 네이티브 시맨틱의 병행
-- 정적 우선 렌더링과 Notion 캐시·Webhook의 설계 방향
+- 정적 우선 렌더링과 Notion 캐시·재검증의 설계 방향
 - 일반 SEO 기반의 GEO·AEO 접근
 - 대표 콘텐츠 선정과 개발 작업의 병렬 진행
 - 개발 단계의 도메인 계약 기반 더미 fixture 사용
 - 영업일·날짜 기준 개발 기한의 미설정
 - 작은 MVP 범위와 빠른 검증 주기의 유지
+- canonical 기준 URL의 `https://sckroll.kim` 확정
+- MVP 콘텐츠의 한국어 중심 구성 확정
+- 사이트 기준 시간대의 `Asia/Seoul` 확정
+- 웹 이력서 우선과 동일 페이지의 PDF 다운로드 제공
+- `Ⓒ` 저작권 기호와 현재 연도 표시 방식 확정
+- 모바일 두 줄과 그 외 화면 한 줄의 하단 문구 배치
+- 초기 호스팅의 Vercel 확정
+- 미지원 Notion 블록의 식별 가능한 fallback 렌더링
+- 최초 릴리스의 Notion Webhook 제외
 
 ## 검토 중인 제안
 
 - Vitest와 Zod 추가
 - Motion의 MVP 애니메이션 도구 채택
-- Vercel의 초기 호스팅 선택
 - 안정적 미디어 저장소의 Vercel Blob 선택
-- 6~24시간 시간 기반 재검증 범위
+- `cacheLife('hours')` 기반 1시간 재검증 범위
+- Google Analytics 4의 직접 연동과 기본 거부 동의 방식
+- YouTube의 장편 영상 외부 서비스 사용
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
 - Node.js와 TypeScript 기준 버전
 - ESLint와 Prettier의 채택·구성
@@ -41,26 +51,18 @@
 
 ## 후속 결정 필요 사항
 
-- 최종 사이트 도메인과 canonical 기준 URL
-- 한국어 전용 출시와 영문 콘텐츠 제공 시점
-- 홈 시계의 서울 기준 또는 방문자 기준 시간대
 - 첫 공개 포스트와 대표 프로젝트의 실제 목록을 병렬 콘텐츠 트랙으로 관리
 - 익명화 대상 회사 프로젝트의 공개 가능 범위
-- 이력서의 웹 전용 구성과 PDF 제공 범위
 - analytics와 개인정보 처리 범위
 - 오류·성능 관측 도구의 선택
-- Notion Webhook endpoint와 배포 환경 구성
-- Notion Webhook의 최초 릴리스 포함 여부
 - Notion API 버전과 공식 SDK 호환성
 - Cache Components 잠정 구현안과 Node.js 런타임 채택
 - Notion 본문의 Markdown API와 block API 렌더링 방식
-- 미지원 Notion 블록의 처리 정책
 - Notion 미디어의 수동 업로드와 자동 복제 범위
 - 인트로 애니메이션의 정확한 지속 시간과 건너뛰기 동작
 - Bento 더보기의 초기 타일 수와 추가 높이
 - 디자인 토큰, 폰트, 색상, 간격, 모션 언어
 - Figma MCP와 코드 연결 범위
-- 저작권 기호 `Ⓒ`와 `©` 중 최종 표기
 
 ## Notion 스키마 후속 작업
 
@@ -80,7 +82,7 @@
 - 포스트와 프로젝트의 발행 상태 정의
 - Notion 장애 시 사용자 경험과 운영 절차
 - 빈 목록과 빈 상세 데이터의 사용자 경험
-- Webhook 검증·중복·순서 역전 처리
+- 시간 기반 재검증과 실제 콘텐츠 반영 시점
 - 접근성 수용 기준과 수동 검증 목록
 - Core Web Vitals 목표와 측정 환경
 - JSON-LD 유형과 실제 화면 콘텐츠의 일치
@@ -114,7 +116,7 @@
 - 패키지 설치와 의존성 잠금
 - Sckroll Notion 워크스페이스의 스키마 변경
 - Figma 디자인 시스템 제작
-- 배포 프로젝트와 Webhook 생성
+- 배포 프로젝트 생성
 
 ## 컨텍스트 갱신 기준
 

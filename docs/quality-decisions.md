@@ -125,6 +125,12 @@ playwright-cli 탐색·locator 생성
 
 ## 후속 운영 검토
 
+- 유입 분석 도구의 Google Analytics 4 사용 방향
+- Google Tag Manager 없는 직접 GA4 연동 제안
+- 분석 저장소 동의 전 기본 거부 방식의 Consent Mode 적용 제안
+- Google Signals·광고 개인화·광고 계정 연결의 MVP 제외 제안
+- 개인정보 처리 안내와 동의 설정 화면의 제공 범위
+- 기본 이벤트와 이력서 PDF 다운로드 등 커스텀 이벤트의 최소 범위
 - 자체 RUM 데이터의 저장소·보존 기간·개인정보 처리
 - CI 성능 회귀 임계값과 실패 정책
 - 지원 브라우저·저사양 기기·네트워크 테스트 범위

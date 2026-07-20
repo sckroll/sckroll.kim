@@ -19,22 +19,51 @@
 
 ## 사용자 체크리스트 — 제품 기본값
 
-- [ ] canonical 기준 도메인의 `https://sckroll.kim` 확정
-- [ ] MVP의 한국어 중심 콘텐츠 확정
-- [ ] 홈 시계의 `Asia/Seoul` 기준 확정
-- [ ] 웹 이력서 우선과 PDF 후속 범위 확정
-- [ ] 하단 저작권 기호와 연도 처리 방식 확정
+- [x] canonical 기준 도메인의 `https://sckroll.kim` 확정
+- [x] MVP의 한국어 중심 콘텐츠 확정
+- [x] 홈 시계의 `Asia/Seoul` 기준 확정
+- [x] 웹 이력서 우선과 같은 페이지의 PDF 다운로드 확정
+- [x] 하단 저작권 기호와 현재 연도 처리 방식 확정
 - [ ] analytics 수집 범위와 개인정보 처리 방향 확정
 
 ## 사용자 체크리스트 — 인프라와 콘텐츠
 
-- [ ] 초기 호스팅의 Vercel 채택 확정
+- [x] 초기 호스팅의 Vercel 채택 확정
 - [ ] 일반 이미지 저장소의 Vercel Blob 또는 대안 확정
 - [ ] 장편 영상의 외부 영상 서비스 사용 범위 확정
 - [ ] Notion Markdown API 우선과 block API 보완 방식 확정
-- [ ] 미지원 Notion 블록의 대체·제외 정책 확정
-- [ ] Webhook의 최초 릴리스 포함 여부 확정
+- [x] 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
+- [x] Webhook의 최초 릴리스 제외 확정
 - [ ] 시간 기반 재검증 범위 확정
+
+## 이번 검수에서 확정된 세부 사항
+
+- 모바일의 저작권과 제작자 문구 두 줄 배치
+- 그 외 화면의 두 문구 한 줄 배치
+- `Asia/Seoul` 기준 현재 연도의 동적 반영
+- 미지원 Notion 블록의 안전한 텍스트와 하위 콘텐츠 유지
+- fallback 요소의 `notion-block--unsupported` 클래스와 원본 타입 속성
+- 추후 전용 렌더러 교체를 위한 블록 타입별 매핑 경계
+
+## 공식 문서 조사 기반 권장안
+
+- Google Tag Manager 없는 GA4 직접 연동과 기본 거부 동의 방식
+- 이미지와 PDF의 Vercel Blob 사용 후 용량·전송량 증가 시 R2 재검토
+- 장편 영상의 YouTube 공개 또는 일부 공개 업로드와 지연 임베드
+- `cacheLife('hours')` 기반 1시간 서버 재검증
+- 공개 전 개인정보 처리 안내와 분석 동의 설정 제공
+
+## 공식 조사 근거
+
+- [GA4 웹사이트 설정](https://support.google.com/analytics/answer/14183469): 계정·속성·웹 데이터 스트림 구성
+- [Google Consent Mode](https://developers.google.com/tag-platform/security/guides/consent): 분석 저장소의 기본 동의 상태와 갱신
+- [Next.js 시간 기반 재검증](https://nextjs.org/docs/app/getting-started/revalidating): `cacheLife` 기반 캐시 갱신
+- [Vercel Blob 가격](https://vercel.com/docs/vercel-blob/usage-and-pricing): 저장·작업·전송량 기준
+- [Cloudflare R2 가격](https://developers.cloudflare.com/r2/pricing/): 저장·작업과 무료 egress 기준
+- [YouTube 임베드](https://support.google.com/youtube/answer/171780): 개인정보 보호 강화 모드
+- [Vimeo 영상 공개 범위](https://help.vimeo.com/hc/en-us/articles/12426199699985): 일부 공개와 embed-only 범위
+- [Cloudflare Stream 가격](https://developers.cloudflare.com/stream/pricing/): 저장·재생 시간 기준
+- [Mux 가격](https://www.mux.com/pricing): 영상 수와 재생 시간 기반 무료·종량제 범위
 
 ## 사용자 체크리스트 — 개발 도구
 
