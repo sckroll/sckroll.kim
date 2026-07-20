@@ -6,7 +6,7 @@
 - 최종 명세 확정 전의 도메인·fixture·Notion 매핑 기준
 - 실제 애플리케이션 구현과 Notion 스키마 변경의 미착수 상태
 - POSTS 후속 스키마의 승인 상태
-- PROJECTS 후속 스키마의 재검수 상태
+- PROJECTS 후속 스키마의 승인 상태
 
 ## 공통 보조 타입
 
@@ -48,10 +48,9 @@
 - `publicationStatus`: `private` 또는 `public`
 - `projectStatus`, `portfolioStatus`
 - `featuredOrder`, `period`, `category`
-- `role`, `context`, `decisions`, `outcomes`
 - `techStack`, `coverImage`
 - `serviceUrl`, `repositoryUrl`
-- `body`: Markdown 본문과 보완 블록 정보
+- `body`: 역할·맥락·의사결정·성과·회고를 포함한 Markdown 본문과 보완 블록 정보
 
 ## `SiteProfile` 도메인 모델
 
@@ -82,32 +81,30 @@
 - hyperlink가 없는 구분 문자와 빈 조각의 변환 제외
 - 공개 시 필수 조건의 Zod 변환 경계 검증
 
-## `PROJECTS` 후속 스키마 제안
+## `PROJECTS` 후속 스키마
 
 | Notion 속성 | 타입 | 사이트 필드 | 공개 조건 |
 |---|---|---|---|
 | 이름 | title | `title` | 필수 |
 | 설명 | rich_text | `summary` | 필수 |
 | Slug | rich_text | `slug` | 필수·고유 |
-| 공개 상태 | select | `publicationStatus` | `공개` |
+| 사이트 공개 | checkbox | `publicationStatus` | 선택 상태 |
 | 대표 순서 | number | `featuredOrder` | 선택 |
 | 프로젝트 기간 | date | `period` | 필수 |
 | 분류 | select | `category` | 필수 |
 | 상태 | status | `projectStatus` | 필수 |
 | 포트폴리오 작성 여부 | status | `portfolioStatus` | 운영용 |
-| 역할 | rich_text | `role` | 필수 |
-| 성과·지표 | rich_text | `outcomes` | 선택 |
 | 기술 스택 | multi_select | `techStack` | 선택 |
-| 대표 이미지 | files | `coverImage` | 선택 |
 | 서비스 URL | url | `serviceUrl` | 선택 |
 | 저장소 URL | url | `repositoryUrl` | 선택 |
-| 공개용 맥락 | rich_text | `context` | 필수 |
 
-- `공개 상태` 선택지의 `비공개`, `공개` 구성
-- `공개 상태` 기본값의 `비공개` 구성
-- 기존 프로젝트 진행 상태와 사이트 공개 상태의 분리
+- `사이트 공개` 기본값의 해제 상태
+- `대표 순서` 값이 있는 공개 프로젝트의 홈 대표 노출
+- 상세 서사의 페이지 본문 유지
+- Notion page cover의 대표 이미지 원본 사용과 Vercel Blob 복제
+- 기존 `상태`와 `포트폴리오 작성 여부` 의미 보존
+- 기존 40개 행의 일괄 마이그레이션 제외
 - 공개 시 필수 조건의 Zod 변환 경계 검증
-- 기존 속성 사용 현황을 반영한 사용자 재승인 필요
 
 ## 더미 fixture 계약
 

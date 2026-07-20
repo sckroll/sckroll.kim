@@ -18,12 +18,12 @@
 
 ## 현재 위치
 
-- 현재 Phase: `Phase 01 — MVP 결정과 더미 콘텐츠 계약`
-- 완료 Phase: `Phase 00 — 컨텍스트 기준선`
+- 현재 Phase: `Phase 02 — 디자인 시스템과 핵심 화면`
+- 완료 Phase: `Phase 00 — 컨텍스트 기준선`, `Phase 01 — MVP 결정과 더미 콘텐츠 계약`
 - 병렬 트랙: `대표 콘텐츠 준비`
 - 애플리케이션 구현 상태: 미착수
 - Notion 스키마 변경 상태: 미착수
-- 시각 디자인 상태: 미착수
+- 시각 디자인 상태: 사용자 방향 검수 단계
 - 최종 명세 상태: 미작성
 
 ## 전체 순서
@@ -31,8 +31,8 @@
 | Phase | 상태 | 핵심 결과물 |
 |---|---|---|
 | [Phase 00](phase-00-context-baseline.md) | 완료 | 프로젝트 컨텍스트와 기술 방향 |
-| [Phase 01](phase-01-mvp-decisions-and-dummy-contract.md) | 진행 중 | 미결정 사항과 더미 콘텐츠 계약 |
-| [Phase 02](phase-02-design-system-and-key-screens.md) | 대기 | 최소 디자인 시스템과 핵심 화면 |
+| [Phase 01](phase-01-mvp-decisions-and-dummy-contract.md) | 완료 | 미결정 사항과 더미 콘텐츠 계약 |
+| [Phase 02](phase-02-design-system-and-key-screens.md) | 진행 중 | 최소 디자인 시스템과 핵심 화면 |
 | [Phase 03](phase-03-final-spec-and-plan.md) | 대기 | 최종 명세와 승인된 구현 계획 |
 | [Phase 04](phase-04-foundation-and-vertical-slice.md) | 대기 | 개발 기반과 채용 담당자 세로 단면 |
 | [Phase 05](phase-05-notion-and-content-pages.md) | 대기 | Notion 연동과 콘텐츠 페이지 |
@@ -53,11 +53,10 @@
 
 ## 현재 사용자의 다음 작업
 
-1. [Phase 01](phase-01-mvp-decisions-and-dummy-contract.md)의 사용자 결정 항목 검수
-2. 더미 프로젝트·포스트의 수량과 범위 승인
-3. 호스팅·미디어·본문 렌더링 기본안 승인
-4. 테스트·도구 기본안 승인
-5. Phase 02 디자인 시스템 작업 전환 승인
+1. [Phase 02](phase-02-design-system-and-key-screens.md)의 시각 방향 일괄 검수
+2. 화면 검증용 더미 문구와 이미지 조건 작성
+3. Figma 파일과 Variables 기반 Foundation 구성
+4. 핵심 컴포넌트와 화면 검수
 
 ## 에이전트 작업 원칙
 
