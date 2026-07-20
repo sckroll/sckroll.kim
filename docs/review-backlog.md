@@ -48,13 +48,13 @@
 - npm 패키지 매니저와 `package-lock.json` 사용
 - Node.js 24 LTS 메이저 기준과 24 계열 보안 패치 적용
 - TypeScript 6 최신 안정 버전과 strict 모드 사용
+- ESLint·Prettier·Zod·Vitest의 MVP 도입
+- 첫 승인 애니메이션 구현 시점의 Motion 설치
+- Zustand와 TanStack Query의 MVP 제외
 
 ## 검토 중인 제안
 
-- Vitest와 Zod 추가
-- Motion의 MVP 애니메이션 도구 채택
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
-- ESLint와 Prettier의 채택·구성
 - 의존성별 설치 시점의 안정 버전
 
 ## 후속 결정 필요 사항

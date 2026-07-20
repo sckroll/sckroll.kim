@@ -39,6 +39,8 @@
 - npm 패키지 매니저와 `package-lock.json` 사용
 - Node.js 24 LTS 메이저 기준과 24 계열 보안 패치 적용
 - TypeScript 6 최신 안정 버전과 strict 모드 사용
+- ESLint·Prettier·Zod·Vitest의 MVP 도입
+- 첫 승인 애니메이션 구현 시점의 Motion 설치
 - Server Component 기본과 작은 Client Island 구성
 - Base UI의 기능별 시맨틱 요소 유지
 - 이동 기능의 링크 요소와 실행 기능의 버튼 요소 사용
@@ -49,6 +51,7 @@
 - Notion Markdown API 우선과 선택적 Block API 보완
 - 전체 Notion 콘텐츠의 1시간 시간 기반 재검증
 - 디자인 확정 전 Storybook과 시각 회귀 테스트의 보류
+- Zustand와 TanStack Query의 MVP 제외
 - 대표 콘텐츠 선정과 개발 작업의 병렬 진행
 - 실제 콘텐츠 준비 전 도메인 계약 기반 더미 fixture 사용
 - canonical 기준 도메인으로 `https://sckroll.kim` 사용

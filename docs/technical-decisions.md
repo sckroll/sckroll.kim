@@ -26,12 +26,11 @@
 - TypeScript 6의 전역 타입 목록 명시와 사용 패키지 한정
 - 설치 시점의 최신 안정 버전 재확인과 잠금 파일 고정
 
-### 추가 권장 도구
+### 확정 품질 도구
 
 - 외부 데이터 런타임 검증용 Zod
 - Notion 변환 계약 테스트용 Vitest
 - 코드 품질용 ESLint와 Prettier
-- 일반 웹 미디어용 안정적 Blob 또는 CDN 저장소
 
 ### 확정 인프라
 
@@ -47,6 +46,7 @@
 - TanStack Query
 - Storybook
 - GSAP
+- 첫 승인 애니메이션 구현 전의 Motion
 - 런타임 3D 렌더링 라이브러리
 
 ### 사용 제외 도구

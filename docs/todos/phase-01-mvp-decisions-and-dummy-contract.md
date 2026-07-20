@@ -89,11 +89,11 @@
 - [x] npm 패키지 매니저 결정
 - [x] Node.js 24 LTS 기준 확정
 - [x] TypeScript 6 최신 안정 버전과 호환성 기준 확정
-- [ ] ESLint와 Prettier 채택 확정
-- [ ] 외부 데이터 검증의 Zod 채택 확정
-- [ ] 변환 계약 테스트의 Vitest 채택 확정
-- [ ] Motion의 Phase 04 또는 후속 도입 시점 확정
-- [ ] Zustand와 TanStack Query의 MVP 제외 재확인
+- [x] ESLint와 Prettier 채택 확정
+- [x] 외부 데이터 검증의 Zod 채택 확정
+- [x] 변환 계약 테스트의 Vitest 채택 확정
+- [x] 첫 승인 애니메이션 구현 시점의 Motion 설치 확정
+- [x] Zustand와 TanStack Query의 MVP 제외 재확인
 
 ## 이번 검수에서 확정된 개발 도구
 
@@ -107,6 +107,11 @@
 - TypeScript 6 최신 안정 버전과 `strict: true` 사용
 - TypeScript·Next.js·ESLint·타입 패키지의 설치 시점 호환성 검증
 - 필요한 전역 타입의 `types` 명시
+- ESLint와 Prettier의 검사·형식화 책임 분리
+- Notion 응답과 환경 변수 경계의 Zod 검증
+- Notion 변환·공개 필터·fallback 계약의 Vitest 검증
+- 첫 승인 애니메이션 구현 시점의 Motion 설치
+- 실제 상태 관리 요구 발생 전 Zustand와 TanStack Query 제외
 
 ## 더미 콘텐츠 계약
 
