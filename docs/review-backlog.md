@@ -53,7 +53,8 @@
 - Zustand와 TanStack Query의 MVP 제외
 - `Post`·`Project`·`SiteProfile` 도메인과 더미 fixture 계약
 - 포스트 최하단의 다중 참고 자료와 프로필 확장 섹션
-- POSTS와 PROJECTS의 후속 속성명·타입·공개 조건
+- POSTS의 후속 속성명·타입·공개 조건
+- Phase 02의 화면용 더미 문구와 Phase 04의 TypeScript fixture 생성
 
 ## 검토 중인 제안
 
@@ -76,7 +77,8 @@
 
 ## Notion 스키마 후속 작업
 
-- 승인된 POSTS와 PROJECTS 속성의 쓰기 작업 별도 승인
+- 승인된 POSTS 속성의 쓰기 작업 별도 승인
+- PROJECTS의 공개 상태·대표 순서·상세 서사 저장 위치 재검수
 - 프로젝트 진행 상태와 공개 상태의 별도 관리 적용
 - 기존 데이터의 기본 비공개 유지와 선택적 마이그레이션
 - stable media URL 저장 방식 결정
