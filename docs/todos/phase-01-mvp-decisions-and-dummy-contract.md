@@ -31,7 +31,7 @@
 - [x] 초기 호스팅의 Vercel 채택 확정
 - [x] 일반 이미지 저장소의 Vercel Blob 확정
 - [x] 장편 영상의 외부 영상 서비스 사용 범위 확정
-- [ ] Notion Markdown API 우선과 block API 보완 방식 확정
+- [x] Notion Markdown API 우선과 Block API 보완 방식 확정
 - [x] 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
 - [x] Webhook의 최초 릴리스 제외 확정
 - [ ] 시간 기반 재검증 범위 확정
@@ -47,6 +47,10 @@
 - 썸네일 facade 이후 `youtube-nocookie.com` 플레이어 로드
 - 일부 공개 영상의 링크 보유자 접근 가능성 인지
 - 저장량·전송량 증가 시 Cloudflare R2 재검토
+- 일반 본문의 Notion Markdown API 우선 조회
+- 구조·메타데이터 보존이 필요한 블록의 Block API 선택 조회
+- Block API의 pagination과 `has_children` 기반 재귀 조회
+- Notion 파일 URL 만료에 대응하는 재조회 또는 안정 URL 변환
 - Google Tag Manager 없는 GA4 직접 연동
 - 한국 대상 MVP의 사전 동의 화면 없는 최소 수집 GA4 즉시 로드
 - Google Signals·광고 개인화·광고 계정 연결·User-ID·사용자 제공 데이터 제외
@@ -68,6 +72,9 @@
 - [개인정보 보호법 제15조](https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1020398485): 개인정보 수집·이용의 적법 근거
 - [개인정보 처리방침 작성지침](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=11133): 쿠키와 맞춤형 광고의 거부권 안내
 - [개인정보 국외 이전 안내](https://www.pipc.go.kr/np/default/page.do?mCode=D060040010): 국외 처리의 근거와 공개 의무
+- [Notion Markdown 본문](https://developers.notion.com/guides/data-apis/working-with-markdown-content): 전체 본문과 `unknown_block_ids` 조회
+- [Notion Block 객체](https://developers.notion.com/reference/block): 블록 타입·하위 블록·미지원 타입 구조
+- [Notion 페이지 본문 조회](https://developers.notion.com/guides/data-apis/working-with-page-content): pagination과 하위 블록 재귀 조회
 - [Next.js 시간 기반 재검증](https://nextjs.org/docs/app/getting-started/revalidating): `cacheLife` 기반 캐시 갱신
 - [Vercel Blob 가격](https://vercel.com/docs/vercel-blob/usage-and-pricing): 저장·작업·전송량 기준
 - [Cloudflare R2 가격](https://developers.cloudflare.com/r2/pricing/): 저장·작업과 무료 egress 기준

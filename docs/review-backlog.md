@@ -37,6 +37,7 @@
 - 저장량·전송량 증가 시 Cloudflare R2 재검토
 - 장편 영상의 YouTube 공개·일부 공개 업로드 확정
 - YouTube 썸네일 facade와 개인정보 보호 강화 플레이어의 지연 로드
+- Notion Markdown API 우선과 선택적 Block API 보완
 - 미지원 Notion 블록의 식별 가능한 fallback 렌더링
 - 최초 릴리스의 Notion Webhook 제외
 - Google Tag Manager 없는 Google Analytics 4 직접 연동
@@ -62,7 +63,6 @@
 - 오류·성능 관측 도구의 선택
 - Notion API 버전과 공식 SDK 호환성
 - Cache Components 잠정 구현안과 Node.js 런타임 채택
-- Notion 본문의 Markdown API와 block API 렌더링 방식
 - Notion 미디어의 수동 업로드와 자동 복제 범위
 - 인트로 애니메이션의 정확한 지속 시간과 건너뛰기 동작
 - Bento 더보기의 초기 타일 수와 추가 높이

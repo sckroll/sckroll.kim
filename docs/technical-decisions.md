@@ -164,6 +164,10 @@ Server Component
 
 ## Notion 본문 fallback
 
+- 일반 본문의 Notion Markdown API 우선 사용
+- 구조·메타데이터 보존이 필요한 블록의 Block API 선택 사용
+- Block API 응답의 `type`별 사이트 모델 변환
+- `has_children` 블록의 pagination과 재귀 조회
 - 미지원 블록의 안전한 텍스트와 하위 콘텐츠 우선 렌더링
 - 중립적인 별도 요소의 `notion-block--unsupported` 클래스 적용
 - 원본 블록 타입 식별용 `data-notion-block-type` 속성 적용

@@ -90,8 +90,10 @@
 - 429·529 응답과 정수 초 `Retry-After` 처리 필요
 - data source query의 page size 최대 100개
 - `has_more`와 `next_cursor` 기반 pagination 필요
-- block API 사용 시 하위 블록의 재귀 조회 필요
-- Markdown API와 block API 기반 본문 렌더러의 선택 보류
+- Markdown API 기반의 일반 본문 조회와 변환 우선
+- 구조·메타데이터 보존이 필요한 블록의 Block API 선택 조회
+- Block API 사용 시 pagination과 하위 블록의 재귀 조회 적용
+- Notion 파일 URL의 만료를 고려한 재조회 또는 안정 URL 변환
 - 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
 - 최초 릴리스의 Notion Webhook 제외
 - Notion-hosted `file` URL의 1시간 유효기간
