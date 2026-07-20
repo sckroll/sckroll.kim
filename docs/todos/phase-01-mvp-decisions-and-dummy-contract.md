@@ -86,7 +86,7 @@
 
 ## 사용자 체크리스트 — 개발 도구
 
-- [ ] 패키지 매니저 결정
+- [x] npm 패키지 매니저 결정
 - [ ] Node.js LTS 기준 확정
 - [ ] TypeScript 설치 버전과 호환성 기준 확정
 - [ ] ESLint와 Prettier 채택 확정
@@ -94,6 +94,12 @@
 - [ ] 변환 계약 테스트의 Vitest 채택 확정
 - [ ] Motion의 Phase 04 또는 후속 도입 시점 확정
 - [ ] Zustand와 TanStack Query의 MVP 제외 재확인
+
+## 이번 검수에서 확정된 개발 도구
+
+- npm 패키지 매니저 사용
+- `package-lock.json` 생성과 커밋
+- `packageManager` 필드의 실제 npm 버전 고정
 
 ## 더미 콘텐츠 계약
 

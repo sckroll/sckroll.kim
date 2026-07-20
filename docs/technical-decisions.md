@@ -17,6 +17,8 @@
 - Base UI
 - Notion API와 공식 JavaScript SDK
 - Playwright와 `playwright-cli`
+- npm 패키지 매니저와 `package-lock.json` 커밋
+- `packageManager` 필드의 실제 npm 버전 고정
 - 설치 시점의 최신 안정 버전 재확인과 잠금 파일 고정
 
 ### 추가 권장 도구
