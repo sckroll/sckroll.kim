@@ -39,7 +39,7 @@
 - LCP 후보 이미지의 lazy loading 제외
 - 이미지 크기·비율 예약과 정확한 `sizes` 제공
 - 비핵심 이미지의 지연 로드
-- 미디어의 CDN 또는 객체 저장소 배치와 버전형 불변 URL 사용
+- 일반 게시용 이미지의 Vercel Blob 배치와 버전형 불변 URL 사용
 - `next/font` 기반 자체 호스팅과 사용 subset·weight 최소화
 - 사용자 재생 영상의 poster와 `preload="none"` 기본
 - 사용자 재생 영상의 네이티브 컨트롤과 하단 source 연결 지연

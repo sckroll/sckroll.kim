@@ -29,10 +29,10 @@
 ### 확정 인프라
 
 - Next.js 배포용 Vercel
-
-### 잠정 인프라 후보
-
-- 안정적 미디어 저장용 Vercel Blob 또는 동등한 저장소
+- 일반 게시용 이미지 저장소의 Vercel Blob
+- 공개 Blob 저장소와 버전형 불변 URL 사용
+- 장편 영상 파일의 Vercel Blob 저장 범위 제외
+- 저장량·전송량 증가 시 Cloudflare R2 재검토
 
 ### MVP 보류 도구
 
@@ -177,7 +177,7 @@ Server Component
 - 목록·상세·홈 섹션의 오류 격리
 - 사용자 화면의 토큰·내부 ID·원본 오류 메시지 노출 금지
 - 1시간 유효기간의 Notion-hosted `file` URL 장기 저장 금지
-- 게시용 이미지와 영상의 안정적 Blob 또는 CDN URL 사용 방향
+- 게시용 이미지의 안정적인 Vercel Blob URL 사용
 - 미디어 자동 복제 파이프라인의 후속 검토
 
 ## 품질 결정 연결

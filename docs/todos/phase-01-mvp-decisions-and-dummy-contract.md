@@ -29,7 +29,7 @@
 ## 사용자 체크리스트 — 인프라와 콘텐츠
 
 - [x] 초기 호스팅의 Vercel 채택 확정
-- [ ] 일반 이미지 저장소의 Vercel Blob 또는 대안 확정
+- [x] 일반 이미지 저장소의 Vercel Blob 확정
 - [ ] 장편 영상의 외부 영상 서비스 사용 범위 확정
 - [ ] Notion Markdown API 우선과 block API 보완 방식 확정
 - [x] 미지원 Notion 블록의 식별 가능한 fallback 정책 확정
@@ -41,6 +41,9 @@
 - 모바일의 저작권과 제작자 문구 두 줄 배치
 - 그 외 화면의 두 문구 한 줄 배치
 - `Asia/Seoul` 기준 현재 연도의 동적 반영
+- 일반 게시용 이미지의 Vercel Blob 저장
+- 장편 영상의 Vercel Blob 저장 범위 제외
+- 저장량·전송량 증가 시 Cloudflare R2 재검토
 - 미지원 Notion 블록의 안전한 텍스트와 하위 콘텐츠 유지
 - fallback 요소의 `notion-block--unsupported` 클래스와 원본 타입 속성
 - 추후 전용 렌더러 교체를 위한 블록 타입별 매핑 경계
@@ -48,7 +51,6 @@
 ## 공식 문서 조사 기반 권장안
 
 - Google Tag Manager 없는 GA4 직접 연동과 기본 거부 동의 방식
-- 이미지와 PDF의 Vercel Blob 사용 후 용량·전송량 증가 시 R2 재검토
 - 장편 영상의 YouTube 공개 또는 일부 공개 업로드와 지연 임베드
 - `cacheLife('hours')` 기반 1시간 서버 재검증
 - 공개 전 개인정보 처리 안내와 분석 동의 설정 제공

@@ -49,6 +49,7 @@
 - canonical 기준 도메인으로 `https://sckroll.kim` 사용
 - MVP 콘텐츠의 한국어 중심 구성과 `Asia/Seoul` 기준 시간대 사용
 - 초기 호스팅 플랫폼으로 Vercel 사용
+- 일반 게시용 이미지 저장소로 Vercel Blob 사용
 - 최초 릴리스의 Notion Webhook 제외
 
 ## 작업 제한

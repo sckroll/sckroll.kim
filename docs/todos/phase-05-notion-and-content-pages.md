@@ -55,7 +55,7 @@
 ## 미디어 체크리스트
 
 - [ ] Notion-hosted file URL의 장기 저장 방지
-- [ ] 안정적인 Blob·CDN URL 사용
+- [ ] 안정적인 Vercel Blob URL 사용
 - [ ] 이미지 크기·비율·`sizes` 구성
 - [ ] 비핵심 이미지 지연 로드
 - [ ] 영상 poster와 source 지연 연결

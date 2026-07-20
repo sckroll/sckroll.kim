@@ -33,6 +33,8 @@
 - `Ⓒ` 저작권 기호와 현재 연도 표시 방식 확정
 - 모바일 두 줄과 그 외 화면 한 줄의 하단 문구 배치
 - 초기 호스팅의 Vercel 확정
+- 일반 게시용 이미지 저장소의 Vercel Blob 확정
+- 저장량·전송량 증가 시 Cloudflare R2 재검토
 - 미지원 Notion 블록의 식별 가능한 fallback 렌더링
 - 최초 릴리스의 Notion Webhook 제외
 
@@ -40,7 +42,6 @@
 
 - Vitest와 Zod 추가
 - Motion의 MVP 애니메이션 도구 채택
-- 안정적 미디어 저장소의 Vercel Blob 선택
 - `cacheLife('hours')` 기반 1시간 재검증 범위
 - Google Analytics 4의 직접 연동과 기본 거부 동의 방식
 - YouTube의 장편 영상 외부 서비스 사용
