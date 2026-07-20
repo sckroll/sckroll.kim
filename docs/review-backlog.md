@@ -35,6 +35,8 @@
 - 초기 호스팅의 Vercel 확정
 - 일반 게시용 이미지 저장소의 Vercel Blob 확정
 - 저장량·전송량 증가 시 Cloudflare R2 재검토
+- 장편 영상의 YouTube 공개·일부 공개 업로드 확정
+- YouTube 썸네일 facade와 개인정보 보호 강화 플레이어의 지연 로드
 - 미지원 Notion 블록의 식별 가능한 fallback 렌더링
 - 최초 릴리스의 Notion Webhook 제외
 - Google Tag Manager 없는 Google Analytics 4 직접 연동
@@ -47,7 +49,6 @@
 - Vitest와 Zod 추가
 - Motion의 MVP 애니메이션 도구 채택
 - `cacheLife('hours')` 기반 1시간 재검증 범위
-- YouTube의 장편 영상 외부 서비스 사용
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
 - Node.js와 TypeScript 기준 버전
 - ESLint와 Prettier의 채택·구성
