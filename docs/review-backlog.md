@@ -37,13 +37,16 @@
 - 저장량·전송량 증가 시 Cloudflare R2 재검토
 - 미지원 Notion 블록의 식별 가능한 fallback 렌더링
 - 최초 릴리스의 Notion Webhook 제외
+- Google Tag Manager 없는 Google Analytics 4 직접 연동
+- 한국 대상 MVP의 사전 동의 화면 없는 최소 수집 GA4 즉시 로드
+- Google 광고 기능·User-ID·사용자 제공 데이터의 MVP 제외
+- 개인정보 처리방침과 지속 가능한 분석 거부 수단 제공
 
 ## 검토 중인 제안
 
 - Vitest와 Zod 추가
 - Motion의 MVP 애니메이션 도구 채택
 - `cacheLife('hours')` 기반 1시간 재검증 범위
-- Google Analytics 4의 직접 연동과 기본 거부 동의 방식
 - YouTube의 장편 영상 외부 서비스 사용
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
 - Node.js와 TypeScript 기준 버전
@@ -54,7 +57,7 @@
 
 - 첫 공개 포스트와 대표 프로젝트의 실제 목록을 병렬 콘텐츠 트랙으로 관리
 - 익명화 대상 회사 프로젝트의 공개 가능 범위
-- analytics와 개인정보 처리 범위
+- GA4 실제 설정과 국외 처리 고지 문구의 출시 전 법률 검토
 - 오류·성능 관측 도구의 선택
 - Notion API 버전과 공식 SDK 호환성
 - Cache Components 잠정 구현안과 Node.js 런타임 채택

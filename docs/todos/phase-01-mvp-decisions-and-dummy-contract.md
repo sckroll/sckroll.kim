@@ -24,7 +24,7 @@
 - [x] 홈 시계의 `Asia/Seoul` 기준 확정
 - [x] 웹 이력서 우선과 같은 페이지의 PDF 다운로드 확정
 - [x] 하단 저작권 기호와 현재 연도 처리 방식 확정
-- [ ] analytics 수집 범위와 개인정보 처리 방향 확정
+- [x] analytics 수집 범위와 개인정보 처리 방향 확정
 
 ## 사용자 체크리스트 — 인프라와 콘텐츠
 
@@ -44,21 +44,28 @@
 - 일반 게시용 이미지의 Vercel Blob 저장
 - 장편 영상의 Vercel Blob 저장 범위 제외
 - 저장량·전송량 증가 시 Cloudflare R2 재검토
+- Google Tag Manager 없는 GA4 직접 연동
+- 한국 대상 MVP의 사전 동의 화면 없는 최소 수집 GA4 즉시 로드
+- Google Signals·광고 개인화·광고 계정 연결·User-ID·사용자 제공 데이터 제외
+- 기본 페이지 조회와 이력서 PDF 다운로드 중심의 최소 이벤트 수집
+- 개인정보 처리방침과 지속 가능한 분석 거부 수단 제공
+- 해외 이용자 대상 확장과 광고 기능 추가 전 동의 요구 재검토
 - 미지원 Notion 블록의 안전한 텍스트와 하위 콘텐츠 유지
 - fallback 요소의 `notion-block--unsupported` 클래스와 원본 타입 속성
 - 추후 전용 렌더러 교체를 위한 블록 타입별 매핑 경계
 
 ## 공식 문서 조사 기반 권장안
 
-- Google Tag Manager 없는 GA4 직접 연동과 기본 거부 동의 방식
 - 장편 영상의 YouTube 공개 또는 일부 공개 업로드와 지연 임베드
 - `cacheLife('hours')` 기반 1시간 서버 재검증
-- 공개 전 개인정보 처리 안내와 분석 동의 설정 제공
 
 ## 공식 조사 근거
 
 - [GA4 웹사이트 설정](https://support.google.com/analytics/answer/14183469): 계정·속성·웹 데이터 스트림 구성
-- [Google Consent Mode](https://developers.google.com/tag-platform/security/guides/consent): 분석 저장소의 기본 동의 상태와 갱신
+- [GA4 기본 수집 정보](https://support.google.com/analytics/answer/11593727): 클라이언트 식별자·세션·기기 정보 등의 기본 수집 범위
+- [개인정보 보호법 제15조](https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1020398485): 개인정보 수집·이용의 적법 근거
+- [개인정보 처리방침 작성지침](https://m.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=11133): 쿠키와 맞춤형 광고의 거부권 안내
+- [개인정보 국외 이전 안내](https://www.pipc.go.kr/np/default/page.do?mCode=D060040010): 국외 처리의 근거와 공개 의무
 - [Next.js 시간 기반 재검증](https://nextjs.org/docs/app/getting-started/revalidating): `cacheLife` 기반 캐시 갱신
 - [Vercel Blob 가격](https://vercel.com/docs/vercel-blob/usage-and-pricing): 저장·작업·전송량 기준
 - [Cloudflare R2 가격](https://developers.cloudflare.com/r2/pricing/): 저장·작업과 무료 egress 기준
