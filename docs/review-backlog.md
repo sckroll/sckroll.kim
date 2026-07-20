@@ -24,6 +24,8 @@
 - 일반 SEO 기반의 GEO·AEO 접근
 - 대표 콘텐츠 선정과 개발 작업의 병렬 진행
 - 개발 단계의 도메인 계약 기반 더미 fixture 사용
+- 영업일·날짜 기준 개발 기한의 미설정
+- 작은 MVP 범위와 빠른 검증 주기의 유지
 
 ## 검토 중인 제안
 
@@ -33,7 +35,6 @@
 - 안정적 미디어 저장소의 Vercel Blob 선택
 - 6~24시간 시간 기반 재검증 범위
 - Chromium과 Mobile WebKit 중심의 PR 품질 게이트
-- 10영업일 기준 MVP 작업 순서
 - Node.js와 TypeScript 기준 버전
 - ESLint와 Prettier의 채택·구성
 - 의존성별 설치 시점의 안정 버전
@@ -86,7 +87,7 @@
 - 테스트 시나리오와 CI 실행 범위
 - MVP 완료 정의와 후속 범위의 분리
 
-## 제안된 10영업일 MVP 순서
+## 제안된 MVP 구현 순서
 
 1. Next.js 기반, 품질 도구, CI, 콘텐츠 타입과 fixture 구성
 2. 공통 레이아웃, 접근성 구조, 홈 핵심 정보 구성
@@ -98,7 +99,7 @@
 
 ## 다음 세션 권장 순서
 
-1. [`phases/README.md`](phases/README.md)의 현재 단계 확인
+1. [`todos/README.md`](todos/README.md)의 현재 단계 확인
 2. Phase 01 미결정 사항과 더미 콘텐츠 계약 검수
 3. Phase 02 최소 디자인 시스템과 핵심 화면 검수
 4. Phase 03 최종 명세 전체 초안 작성

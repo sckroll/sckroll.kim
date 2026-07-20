@@ -13,7 +13,7 @@
 - [`notion-context.md`](notion-context.md): Notion 식별자, 현재 스키마, 운영 제약, 변경 후보
 - [`quality-decisions.md`](quality-decisions.md): 접근성, 성능, 미디어, GEO·AEO·SEO, 테스트
 - [`review-backlog.md`](review-backlog.md): 결정 상태, 미결정 사항, 후속 검토 순서
-- [`phases/README.md`](phases/README.md): 현재 Phase, 전체 로드맵, 단계별 체크리스트
+- [`todos/README.md`](todos/README.md): 현재 Phase, 전체 로드맵, 단계별 체크리스트
 - [`../AGENTS.md`](../AGENTS.md): 에이전트 작업 규칙과 세션 재개 절차
 
 ## 문서 우선순위

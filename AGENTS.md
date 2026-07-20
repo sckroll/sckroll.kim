@@ -15,7 +15,7 @@
 5. [`docs/notion-context.md`](docs/notion-context.md)의 데이터 소스와 스키마 상태 확인
 6. [`docs/quality-decisions.md`](docs/quality-decisions.md)의 접근성·성능·검색·테스트 결정 확인
 7. [`docs/review-backlog.md`](docs/review-backlog.md)의 미결정 사항과 다음 단계 확인
-8. [`docs/phases/README.md`](docs/phases/README.md)의 현재 Phase와 체크리스트 확인
+8. [`docs/todos/README.md`](docs/todos/README.md)의 현재 Phase와 체크리스트 확인
 9. `git status`와 최근 커밋을 통한 사용자 변경 사항 확인
 10. 현재 단계에 필요한 스킬과 공식 문서의 최신 내용 확인
 
