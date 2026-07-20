@@ -15,8 +15,9 @@
 5. [`docs/notion-context.md`](docs/notion-context.md)의 데이터 소스와 스키마 상태 확인
 6. [`docs/quality-decisions.md`](docs/quality-decisions.md)의 접근성·성능·검색·테스트 결정 확인
 7. [`docs/review-backlog.md`](docs/review-backlog.md)의 미결정 사항과 다음 단계 확인
-8. `git status`와 최근 커밋을 통한 사용자 변경 사항 확인
-9. 현재 단계에 필요한 스킬과 공식 문서의 최신 내용 확인
+8. [`docs/phases/README.md`](docs/phases/README.md)의 현재 Phase와 체크리스트 확인
+9. `git status`와 최근 커밋을 통한 사용자 변경 사항 확인
+10. 현재 단계에 필요한 스킬과 공식 문서의 최신 내용 확인
 
 ## 현재 프로젝트 상태
 
@@ -27,6 +28,7 @@
 - 시각 디자인과 디자인 시스템 작업의 후속 단계 배치
 - 애플리케이션 스캐폴딩과 기능 구현의 미착수 상태
 - Sckroll 워크스페이스의 Notion 스키마 변경 미착수 상태
+- Phase 01 MVP 결정과 더미 콘텐츠 계약 검수 단계
 
 ## 유지할 핵심 결정
 
@@ -42,6 +44,8 @@
 - Notion 런타임 연동의 서버 전용 SDK 사용
 - `ntn`의 개발·조회·관리 용도 한정
 - 디자인 확정 전 Storybook과 시각 회귀 테스트의 보류
+- 대표 콘텐츠 선정과 개발 작업의 병렬 진행
+- 실제 콘텐츠 준비 전 도메인 계약 기반 더미 fixture 사용
 
 ## 작업 제한
 
