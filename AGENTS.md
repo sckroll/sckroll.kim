@@ -38,6 +38,7 @@
 - React와 Next.js App Router 중심의 정적 우선 아키텍처
 - npm 패키지 매니저와 `package-lock.json` 사용
 - Node.js 24 LTS 메이저 기준과 24 계열 보안 패치 적용
+- TypeScript 6 최신 안정 버전과 strict 모드 사용
 - Server Component 기본과 작은 Client Island 구성
 - Base UI의 기능별 시맨틱 요소 유지
 - 이동 기능의 링크 요소와 실행 기능의 버튼 요소 사용
